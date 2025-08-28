@@ -1,11 +1,14 @@
 return {
 	-- Colorscheme
 	{
-		"theniceboy/nvim-deus",
+		"RRethy/nvim-base16",
 		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.cmd([[colorscheme deus]])
+			vim.o.background = "light"
+			pcall(function()
+				require('base16-colorscheme').setup('selenized-light')
+			end)
 		end,
 	},
 
@@ -22,19 +25,19 @@ return {
 				end
 				require("notify")(msg, ...)
 			end
-			notify.setup({
-				on_open = function(win)
-					vim.api.nvim_win_set_config(win, { border = "none" })
-				end,
-				background_colour = "#202020",
-				fps = 60,
-				level = 2,
-				minimum_width = 50,
-				render = "compact",
-				stages = "fade_in_slide_out",
-				timeout = 3000,
-				top_down = true
-			})
+							notify.setup({
+					on_open = function(win)
+						vim.api.nvim_win_set_config(win, { border = "none" })
+					end,
+					background_colour = "#fbf3db",
+					fps = 60,
+					level = 2,
+					minimum_width = 50,
+					render = "compact",
+					stages = "fade_in_slide_out",
+					timeout = 3000,
+					top_down = true
+				})
 			local opts = { noremap = true, silent = true }
 			vim.keymap.set("n", ",;", function()
 				require('telescope').extensions.notify.notify({

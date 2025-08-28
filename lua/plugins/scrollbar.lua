@@ -8,13 +8,7 @@ return {
 		vim.api.nvim_create_autocmd("BufEnter", {
 			pattern = "*",
 			callback = function()
-				vim.cmd([[
-hi! ScrollbarGitAdd guifg=#8CC85F
-hi! ScrollbarGitAddHandle guifg=#A0CF5D
-hi! ScrollbarGitChange guifg=#E6B450
-hi! ScrollbarGitChangeHandle guifg=#F0C454
-hi! ScrollbarGitDelete guifg=#F87070
-hi! ScrollbarGitDeleteHandle guifg=#FF7B7B ]])
+				-- Use colorscheme defaults; remove hardcoded git colors
 			end,
 			group = group,
 		})
@@ -24,7 +18,7 @@ hi! ScrollbarGitDeleteHandle guifg=#FF7B7B ]])
 			show = true,
 			handle = {
 				text = " ",
-				color = "#928374",
+				-- color follows theme
 				hide_if_all_visible = true,
 			},
 			marks = {

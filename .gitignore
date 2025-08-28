@@ -1,13 +1,61 @@
+# Vim 临时文件
 *.swp
-.DS_Store
-view/
-plugged/
-sessions/
-autoload/plug.vim.old
-tmp/
+*.swo
+*~
 .netrwhist
-_machine_specific.vim
 .vim-bookmarks
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# Neovim 特定文件
+view/
+sessions/
+tmp/
+undo/
+
+# 插件管理
+plugged/
 _local_plugins/
 
+# Lazy.nvim
+lazy-lock.json
+
+# 机器特定配置
+_machine_specific.vim
 lua/config/machine_specific.lua
+lua/machine_specific.lua
+
+# 日志文件
+*.log
+debug.log
+
+# 缓存文件
+.cache/
+*cache*
+
+# Aider AI工具
+.aider*
+.cursorindexingignore
+
+# LSP/调试文件
+.vscode/
+.idea/
+
+# 备份文件
+*backup*
+*.backup
+*.bak
+
+# 临时目录
+temp/
+temporary/
+
+# 项目工具
+.specstory/
+*.luarc.json
+.luarc.json
+
+# Vim 交换文件扩展
+*.swn

@@ -24,7 +24,8 @@ return {
 					'regex',
 				},
 			})
-			vim.cmd("hi IlluminatedWordText guibg=#393E4D gui=none")
+			-- vim.cmd("hi IlluminatedWordText guifg=#1f2335 guibg=#d2d2d2 gui=none")
+			-- follow colorscheme for illuminated words (no hardcoded bg)
 		end
 	},
 	{

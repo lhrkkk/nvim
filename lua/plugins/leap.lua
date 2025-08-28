@@ -1,4 +1,4 @@
-local labels = "arstneiowfuydh"
+local labels = "asdfghjkl;qwertyuiop"
 return {
 	{
 		"folke/flash.nvim",
@@ -104,19 +104,6 @@ return {
 			},
 		},
 		keys = {
-			-- {
-			-- 	"<ESC>",
-			-- 	mode = { "n" },
-			-- 	function()
-			-- 		require("flash").jump({
-			-- 			remote_op = {
-			-- 				restore = true,
-			-- 				motion = true,
-			-- 			},
-			-- 		})
-			-- 	end,
-			-- 	desc = "Flash",
-			-- },
 			{
 				"tt",
 				mode = { "n", "o", "x" },
@@ -125,14 +112,6 @@ return {
 				end,
 				desc = "Flash Treesitter",
 			},
-			-- {
-			-- 	"r",
-			-- 	mode = "o",
-			-- 	function()
-			-- 		require("flash").remote()
-			-- 	end,
-			-- 	desc = "Remote Flash",
-			-- },
 			{
 				"/",
 				mode = { "o", "x" },
@@ -141,14 +120,6 @@ return {
 				end,
 				desc = "Flash Treesitter Search",
 			},
-			-- {
-			-- 	"<c-s>",
-			-- 	mode = { "c" },
-			-- 	function()
-			-- 		require("flash").toggle()
-			-- 	end,
-			-- 	desc = "Toggle Flash Search",
-			-- },
 		},
 	}
 	-- {
